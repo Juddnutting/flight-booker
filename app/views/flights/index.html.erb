@@ -1,0 +1,5 @@
+<h1> This is the flights index </h1>
+<ul> <% @flights.each do |flight| %>
+	<li> From: <%=flight.departure_airport.city%> To: <%=flight.destination_airport.city%> <%=flight.departure.strftime("Departs %a %b %d at %H%M")%> </li>
+	<%end%>
+	</ul>
